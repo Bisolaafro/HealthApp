@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/etPassword3"
+        android:layout_width="220dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/white"
+        android:elevation="25dp"
+        android:fontFamily="@font/alegreya_bold"
+        android:hint="Re-type Your Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="113dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098"
+        app:srcCompat="@drawable/baseline_healing_24" />
+
+    <EditText
+        android:id="@+id/etEmail2"
+        android:layout_width="215dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/white"
+        android:elevation="25dp"
+        android:fontFamily="@font/alegreya_bold"
+        android:hint="E-mail"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <EditText
+        android:id="@+id/etPassword2"
+        android:layout_width="220dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/white"
+        android:elevation="25dp"
+        android:fontFamily="@font/alegreya_bold"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background"
+        android:fontFamily="@font/alegreya_bold"
+        android:text="Sign Up"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_bold"
+        android:text="@string/SignIn"
+        android:textColor="@color/text_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+</androidx.constraintlayout.widget.ConstraintLayout>

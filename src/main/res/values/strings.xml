@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HealthApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="SignUp">Not Registered Yet? Sign Up</string>
+    <string name="SignIn">Already Registered? Sign In</string>
+    <string name="BMRDef">Your Basal Metabolic Rate (BMR) is the number of calories you burn as your body performs basic life-sustaining function.</string>
+</resources>

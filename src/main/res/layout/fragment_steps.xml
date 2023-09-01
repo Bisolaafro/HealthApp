@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepsFragment">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="280dp"
+        android:layout_height="389dp"
+        app:cpb_background_progressbar_color="#b6bbd8"
+        app:cpb_background_progressbar_width="20dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="20000"
+        app:cpb_progressbar_color="#3f51b5"
+        app:cpb_progressbar_width="20dp"
+        app:cpb_round_border="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="81dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/arima_madurai"
+        android:hint="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
+        app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/circularProgressBar"
+        app:layout_constraintTop_toTopOf="@+id/circularProgressBar"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <TextView
+        android:id="@+id/tvGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/circularProgressBar"
+        app:layout_constraintTop_toTopOf="@+id/circularProgressBar"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="STEP COUNT"
+        android:textColor="@color/purp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/circularProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372" />
+
+    <EditText
+        android:id="@+id/etsetGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularProgressBar"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <TextView
+        android:id="@+id/tvSetGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arima_madurai"
+        android:text="Type in Goal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsetGoal"
+        app:layout_constraintVertical_bias="0.286" />
+
+    <TextView
+        android:id="@+id/tvNewGoal"
+        android:layout_width="202dp"
+        android:layout_height="46dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularProgressBar"
+        app:layout_constraintVertical_bias="0.854" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
